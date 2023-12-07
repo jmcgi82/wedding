@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playpen+Sans&display=swap');
+
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+}
+
+body,
+h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  display: relative;
+}
+
+.title {
+  font-family: Allura, 'sans-serif';
+}
+
+body {
+  text-align: center;
+}
+
+.nav-button:hover {
+  background-color: burlywood;
+  border-radius: 50%;
+}
+
+.sub-sec>* {
+  word-wrap: break-word;
+}
+
+.sub-sec {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+
+.sub-sec-a>h3,
+.sub-sec-b>h3 {
+  font-family: Allura, "sans serif";
+  font-size: 250%;
+}
+
+.sub-secs {
+  display: block;
+  padding-bottom: 1%;
+  margin-top: -2.6%;
+}
+
+.sub-sec-a>p,
+.sub-sec-b>p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.notes-hd {
+  font-size: 120%;
+}
+
+.notes {
+  font-size: 80%;
+  width: 25%;
+  margin-left:38%;
+}
+
+.notes-last {
+  padding-bottom: 2%;
+}
+
+.btn-rsvp {
+  padding-bottom: 2%;
+}
+
+.reg-sec {
+  padding-bottom: 2%;
+}
+
+.reg-sec > p {
+  padding-bottom: 3%;
+  width: 40%;
+  margin-left: 15%;
+}
+
+.reg-btn:hover {
+  cursor: pointer;
+  background-color: rgb(53, 53, 53);
+  color: rgb(229, 228, 142)
+}
+
+.prop {
+  display: inline;
+  
+}
+
+.propI {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+}
+
+.propT {
+  background: rgb(98,98,98);
+  background: linear-gradient(85deg, rgba(98,98,98,1) 0%, rgba(220,220,220,1) 15%, rgba(220,220,220,1) 83%, rgba(98,98,98,1) 98%);
+  margin-bottom: 2.6%;
+}
+
+.propT > video {
+  padding-bottom: 2%;
+}
+
+.reg-btn {
+  text-decoration: none;
+  padding: 1%;
+  margin-top: 2%;
+  border-radius: 100%;
+  background-color: black;
+  color: white;
+
+}
+
+.propT > h3 {
+  padding-top: 1%;
+}
+
+.sub-sec-a {
+  padding-top: 1%;
+  background: rgb(98,98,98);
+  background: linear-gradient(90deg, rgba(98,98,98,1) 0%, rgba(51,52,51,1) 10%, rgba(51,52,51,1) 90%, rgba(98,98,98,1) 100%);
+  opacity: .9;
+  color: white;
+}
+
+.sub-sec-b {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: rgb(98,98,98);
+  background: linear-gradient(90deg, rgba(98,98,98,1) 0%, rgba(220,220,220,1) 10%, rgba(220,220,220,1) 90%, rgba(98,98,98,1) 100%);
+  opacity: .9;
+}
+
+.rsvp-sec {
+  padding-bottom: 2%;
+}
+
+.btn-rsvp:hover {
+  background-color: rgb(53, 53, 53);
+  color: rgb(229, 228, 142)
+}
+
+.big-day-info {
+  width: 52%;
+}
+
+.big-day-header {
+  font-size: 300%;
+  padding-top: 4.6%;
+}
+
+.big-day-list {
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  margin-left: 22%;
+}
+
+.big-day-text {
+  font-size: 150%;
+  font-family: "Caveat", sans-serif;
+
+}
+
+.big-day-text-info {
+  text-decoration: none;
+  padding-left: 2%;
+  font-size: 125%;
+  font-family: "Caveat", sans-serif;
+}
+
+.link-1 { 
+  color: rgb(255, 254, 254);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link-1:hover {
+  color: rgb(200, 200, 247);
+  text-decoration: underline;
+}
+
+.link-2 {
+  color: rgb(143, 143, 143);
+  background: rgb(208, 208, 147);
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.link-2:hover {
+  background-color: rgb(120, 120, 118);
+  cursor: pointer;
+}
+
+.title-slider {
+  height: 37rem;
+  margin-top: -1.2%;
+}
+
+.header {
+  float: left;
+  margin-top: 35%;
+  margin-left: 2%;
+}
+
+.title {
+  font-size: 400%;
+  position: relative;
+  z-index: 5;
+  color: white;
+}
+
+/*start image scoller*/
+
+.image {
+  left: 0;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+/*end image scroller*/
+
+/*start count down clock*/
+.count-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.clock-title {
+  margin-top: 5%;
+  font-size: 175%;
+  font-family: "Times New Roman";
+}
+
+.clock-info {
+  display: inline;
+  background: rgb(7, 7, 7);
+  padding: 1%;
+  margin: 1%;
+  border-radius: 10%;
+  font-weight: bold;
+  font-size: 110%;
+  border-style: solid;
+  border-color: rgb(75, 74, 74);
+  font-family: "Times New Roman";
+}
+
+.clock-labels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.clock-lb {
+  display: inline;
+  margin: 0 1% 1% 1.5%;
+}
+
+
+/*end count down clock */

@@ -1,0 +1,92 @@
+<!-- <div class="sub-sec-i">
+    <div class="header">
+        <h1 class="title">Emily & Ethan's Wedding</h1>
+    </div>
+    <div class="image">
+        <a class="last-button" (click)="lastImage()"><</a>
+        <img width="60%" height="350px" src="{{ currImage.imageUrl }}">
+        <a class="next-button" (click)="nextImage()">></a>
+    </div>
+    
+    
+</div> -->
+<br />
+<div class="title-slider" id="top">
+    <div class="header">
+        <h1 class="title">Emily & Ethan's Wedding</h1>
+    </div> 
+    <div class="image">
+        <img width="100%" height="660px" @fade src="{{ currImage.imageUrl }}">
+    </div>
+</div>
+<div class="sub-sec">
+    <div class="sub-sec-a sub-secs">
+        <h3 class="big-day-header">The Big Day</h3>
+        <ul class="big-day-list">
+            <li>
+                <pre><strong class="big-day-text">When?</strong><u class="big-day-text-info">June 9th, 2024</u></pre>
+            </li>
+            <li>
+                <pre><strong class="big-day-text">What Time?</strong><u class="big-day-text-info">5:00 PM EST</u></pre>
+            </li>
+            <li>
+                <pre><strong class="big-day-text">Where?</strong><u class="big-day-text-info"><a href="https://tennesseeriverplace.com/" class="link-1" target="_blank">Tennessee Riverplace</a> - <a target="_blank" class="link-2" href="https://www.google.com/maps/dir//3104+Scenic+Waters+Ln+Chattanooga,+TN+37419/@35.0665515,-85.3424961,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x88605ec5c9dd757d:0x8c3dbff07cc65edf!2m2!1d-85.3424961!2d35.0665515?entry=ttu">Directions</a></u></pre>
+            </li>
+            <li>
+                <pre><strong class="big-day-text">Maid of Honor:</strong><u class="big-day-text-info">Makayla Ford</u></pre>
+            </li>
+            <li>
+                <pre><strong class="big-day-text">Best Men:</strong><u class="big-day-text-info">Aidan McGill, Channing Chastain</u></pre>
+            </li>
+            <li>
+                <pre><strong class="big-day-text">Bridesmaids:</strong><u class="big-day-text-info">Brenna Mcdonald, Naomi Mcdonald, Isabelle McGill, Aimee Mcdonald</u></pre>
+            </li>
+            <li>
+                <pre><strong class="big-day-text">Groomsmen:</strong> <u class="big-day-text-info">Joshua Ford, Patrick Mcdonald, Andrew Mcdonald</u></pre>
+            </li>
+        </ul>
+        <div class="clock-title"> Days 'Till We Say I Do</div>
+        <div class="count-down">
+            <div class="clock-info">{{dayS}}</div>
+            <div class="clock-info">{{hourS}}</div>
+            <div class="clock-info">{{minuteS}}</div>
+            <div class="clock-info">{{secondS}}</div>
+        </div>
+        <div class="clock-labels">
+            <div class="clock-lb">Days</div>
+            <div class="clock-lb">Hours</div>
+            <div class="clock-lb">Minutes</div>
+            <div class="clock-lb">Seconds</div>
+        </div>
+    </div>
+    <div class="sub-sec-b sub-secs propT">
+        <h3>The Proposal</h3>
+        <img height="350px" class="prop propI"
+            src="../../../assets/Images/7F6A4B84-CCEE-4476-8E07-563412DEE5A9 (3).jpg">
+        <video height="500px" width="auto" controls>
+            <source class="prop" src="../../../assets/Images/20230712_132025.mp4">
+            Your browser does not support this video.
+        </video>
+        <img height="350px" class="prop propI" src="../../../assets/Images/IMG_8458 (1).jpg">
+    </div>
+    <div class="sub-sec-a sub-secs reg-sec" id="registry">
+        <h3>Registry</h3>
+        <p>If you wish to get a gift for the bride and groom we have a online registry through amazon where you can
+            contribute part or all of an items cost. However, if you know of something that would make a great gift feel
+            free to shop outside of the registry!</p>
+        <a class="reg-btn" href="https://www.amazon.com/wedding/registry/3LDO2KQDBJOFD" target="_blank">Amazon
+            Registry</a>
+    </div>
+    <div class="sub-sec-b sub-secs rsvp-sec" id="rsvp">
+        <h3>RSVP</h3>
+        <div class="notes-hd">We are so excited for you to join us for the wedding. A couple of notes before you RSVP:
+            <br /><br />
+        <div class="notes">*Kids are welcome to come with you, but will not be allowed at the ceremony. We will
+            provide child care for them so you can have a stress free evening.</div>
+        <br />
+        <div class="notes notes-last">*Please be sure to include any dietary or allergen restrictions so we can be sure to
+            accomodate.</div>
+            <a routerLink="/rsvp" class="reg-btn btn-rsvp">RSVP</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="img-hdr">
+    <img src="../../../assets/Images/_DSC3985.JPG" width="100%" height="250px">
+</div>
+<div [formGroup]="rsvpForm" class="bod-1">
+        <div class="rsvp-title">RSVP</div>
+        <div class="form-area">
+            <div  class="form-inner">
+                <div class="form-title">Party Information</div>
+                <div class="form-title error" id="empty_fields">{{errorMessage}}</div>
+                <div class="form-input">
+                    <div class="form-label"><label>Party Name<b class="required" title="This field is required.">*</b></label></div>
+                    <div class="input-space">
+                        <input formControlName="partyName" type="text"  id="name">
+                    </div>
+                </div>
+                <div class="form-input">
+                    <div class="form-label" id="size"><label>Party Size<b class="required" title="This field is required.">*</b></label></div>
+                    <div class="input-space">
+                        <div class="dec" (click)="dec()"><</div>
+                        <input formControlName="partySize" type="number" value="{{partySize}}" placeholder="1" readonly>
+                        <div class="inc" (click)="inc()">></div>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <div class="form-label" ><label>Party Email<b class="required" title="This field is required.">*</b></label></div>
+                    <div class="input-space">
+                        <input formControlName="partyEmail" type="text" id="email">
+                    </div>
+                </div>
+                <div class="form-input">
+                    <div class="form-label" ><label>Party Phone<b class="required" title="This field is required.">*</b></label></div>
+                    <div class="input-space">
+                        <input formControlName="partyPhone" type="text" (keypress)="formatPhone()" onpaste="return false" maxlength="12" placeholder="800-100-1000" autocomplete="false" id="phone">
+                    </div>
+                </div>
+                <div class="form-input">
+                    <div class="form-label" ><label>Dietary <b class="required" title="This field is required.">*</b></label></div>
+                    <div class="input-space">
+                        <input formControlName="dietaryRestrictions" class="large-space" type="text" id="food">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="rsvp" (click)="checkout()">Rsvp</button>
