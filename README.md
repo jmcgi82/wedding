@@ -1,12 +1,12 @@
-# WeddingFrontEnd - V.0.9.4
+# WeddingFrontEnd - V.0.9.5
 
 **This project is still in development, refer to the version notes for the latest update.
 
 ## Version Notes
-- Added crossorigin support and backend http connections.
-- Increased form validation
-- Removed secondary rsvp form
-- Added rsvp success message page
+- Added updates to typos in GUI
+
+### TODO:
+-  convert project to use local file versus spring framework management
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.7.
 
